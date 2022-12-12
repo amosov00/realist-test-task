@@ -1,0 +1,38 @@
+.viewButtonsContainer {
+  position: relative;
+
+  .viewButtons {
+    mask-image: linear-gradient(to right, rgba(255,255,255,0) 8%, rgba(255,255,255,1) 25%, rgba(255,255,255,1) 75%, rgba(255,255,255,0) 92%);
+    display: flex;
+    overflow: auto;
+    white-space: nowrap;
+    position: relative;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  .btn {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+
+  }
+
+  .afterBtn {
+    top: 0;
+    right: 0;
+  }
+
+  .beforeBtn {
+    top: 0;
+    left: 0;
+    transform: rotate(-180deg);
+  }
+}
