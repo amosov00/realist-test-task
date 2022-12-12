@@ -1,0 +1,27 @@
+.card {
+  background-color: white;
+  padding: 8px;
+  font-size: 14px;
+  width: fit-content;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  margin-right: 8px;
+  &:first-child {
+    margin-left: 16px;
+  }
+  &:last-child {
+    margin-right: 16px;
+  }
+
+
+  .stick {
+    width: 2px;
+    height: 24px;
+    margin-right: 8px;
+  }
+
+  .price {
+    font-weight: 900;
+  }
+}

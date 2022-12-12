@@ -1,0 +1,16 @@
+.button {
+  width: 100%;
+  font-weight: 900;
+  font-size: 18px;
+  padding: 8px 0 8px 0;
+  background-color: white;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: 1px solid #D2D2D2;
+  img {
+    margin-right: 8px;
+  }
+}

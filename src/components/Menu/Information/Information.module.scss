@@ -1,0 +1,25 @@
+.information {
+  margin-bottom: 26px;
+
+  .title {
+    font-weight: 900;
+    font-size: 20px;
+  }
+
+  .borderBottom {
+    padding-bottom: 8px;
+    border-bottom: 1px solid #D2D2D2;
+  }
+
+  .block {
+    padding-top: 8px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+
+    div:first-child {
+      color: #999999;
+    }
+
+  }
+}

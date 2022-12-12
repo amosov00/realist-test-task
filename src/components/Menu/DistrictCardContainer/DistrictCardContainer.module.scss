@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  overflow: auto;
+  white-space: nowrap;
+  margin-bottom: 16px;
+  margin-right: -16px;
+  margin-left: -16px;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

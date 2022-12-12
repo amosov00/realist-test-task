@@ -1,0 +1,87 @@
+.menu {
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  padding: 24px 16px;
+  position: relative;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  .mobileBlind {
+    height: 24px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &::after {
+      content: '';
+      display: block;
+      background-color: #DFE2EC;
+      height: 6px;
+      width: 80px;
+      border-radius: 999px;
+    }
+  }
+
+
+  .closeButton {
+    position: absolute;
+    top: 24px;
+    right: 16px;
+    width: 32px;
+    height: 32px;
+    border: none;
+    border-radius: 9999px;
+    background-color: #DFE2EC;
+    background-image: url(../../../src/images/exitIcon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+
+  }
+
+  .head {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    width: 335px;
+  }
+
+
+  .chartWrapper {
+    background-color: white;
+    border-radius: 8px;
+    padding-top: 25px;
+    margin-bottom: 8px;
+    height: 200px;
+  }
+
+  .priceWrapper {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    .price {
+      font-size: 24px;
+      font-weight: 700;
+    }
+    .currency {
+      font-size: 20px;
+      color: gray;
+    }
+    .priceStick {
+      margin-right: 8px;
+      background-color: #D6A100;
+      height: 24px;
+      border-radius: 999px;
+      width: 4px;
+    }
+  }
+}

@@ -1,17 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Lato', sans-serif;
+  .ymaps-2-1-79-copyright, .ymaps-2-1-79-zoom, .ymaps-2-1-79-controls__toolbar_left, .ymaps-2-1-79-controls__toolbar_right, .ymaps-2-1-79-float-button, .ymaps-2-1-79-_hidden-text {
+    display: none;
+  }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.ct-chart {
+  height: 200px;
+}
+.App {
+  position: relative;
 }
 
-.ymaps-2-1-79-copyright {
-  display: none;
+
+.placemark {
+  position: absolute;
+  left: -50px;
+  top: 0;
+  border: 1px solid white;
+  background-color: red;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 9999px;
+  white-space: nowrap;
+}
+
+.placemark_wrapper {
+  position: relative;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  text-align: center;
+  font-weight: bold;
 }

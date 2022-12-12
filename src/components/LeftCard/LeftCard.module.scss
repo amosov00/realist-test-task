@@ -1,0 +1,16 @@
+.leftCard {
+  transition: all 0.3s;
+  z-index: 999;
+  width: 400px;
+  position: absolute;
+  top: 24px;
+  left: 24px;
+}
+
+.opened {
+  transform: translate(0);
+}
+
+.closed {
+  transform: translate(-424px);
+}

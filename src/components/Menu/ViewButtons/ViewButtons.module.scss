@@ -1,8 +1,21 @@
 .viewButtonsContainer {
   position: relative;
+  margin-bottom: 16px;
+
+
+  .leftBlur {
+    mask-image: linear-gradient(to right, rgba(255,255,255,0) 8%, rgba(255,255,255,1) 25%);
+  }
+
+  .rightBlur {
+    mask-image: linear-gradient(to right, rgba(255,255,255,1) 75%, rgba(255,255,255,0) 92%);
+  }
+
+  .globalBlur {
+    mask-image: linear-gradient(to right, rgba(255,255,255,0) 8%, rgba(255,255,255,1) 25%, rgba(255,255,255,1) 75%, rgba(255,255,255,0) 92%);
+  }
 
   .viewButtons {
-    mask-image: linear-gradient(to right, rgba(255,255,255,0) 8%, rgba(255,255,255,1) 25%, rgba(255,255,255,1) 75%, rgba(255,255,255,0) 92%);
     display: flex;
     overflow: auto;
     white-space: nowrap;

@@ -1,0 +1,23 @@
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+
+  div {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid transparent;
+    border-radius: 9999px;
+    cursor: pointer;
+  }
+
+
+  .active {
+    background-color: white;
+    font-weight: 900;
+    border: 1px solid #dfe2ec;
+  }
+}
