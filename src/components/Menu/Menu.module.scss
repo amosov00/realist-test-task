@@ -11,7 +11,7 @@
   .contentContainer {
     overflow-y: scroll;
     overflow-x: hidden;
-    height: calc(100vh - 68.5px);
+    height: calc(100% - 68.5px);
 
     &::-webkit-scrollbar {
       display: none;
