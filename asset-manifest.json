@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/realist-test-task/static/css/main.b9abb492.css",
-    "main.js": "/realist-test-task/static/js/main.a619be38.js",
+    "main.css": "/realist-test-task/static/css/main.533a6a67.css",
+    "main.js": "/realist-test-task/static/js/main.14df41ab.js",
     "static/media/ball.svg": "/realist-test-task/static/media/ball.8cb73912f9844603f1d5f5f4bbc58888.svg",
     "index.html": "/realist-test-task/index.html",
     "static/media/exitIcon.svg": "/realist-test-task/static/media/exitIcon.0f34fedd6e68ab8a4675.svg",
     "static/media/arrow.svg": "/realist-test-task/static/media/arrow.d1d4ab2d983e0d05d92199edf1153092.svg",
-    "main.b9abb492.css.map": "/realist-test-task/static/css/main.b9abb492.css.map",
-    "main.a619be38.js.map": "/realist-test-task/static/js/main.a619be38.js.map"
+    "main.533a6a67.css.map": "/realist-test-task/static/css/main.533a6a67.css.map",
+    "main.14df41ab.js.map": "/realist-test-task/static/js/main.14df41ab.js.map"
   },
   "entrypoints": [
-    "static/css/main.b9abb492.css",
-    "static/js/main.a619be38.js"
+    "static/css/main.533a6a67.css",
+    "static/js/main.14df41ab.js"
   ]
 }
