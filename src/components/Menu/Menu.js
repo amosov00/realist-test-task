@@ -42,7 +42,7 @@ export function Menu({onExit, data, isMobile, setIsFull, isFull}) {
                 )
             }
             <button className={styles.closeButton} onClick={onExit}/>
-            <div className={styles.head}>123{!isMobile ? data?.name : kitcut(data?.name, 17)}</div>
+            <div className={styles.head}>{!isMobile ? data?.name : kitcut(data?.name, 17)}</div>
             <div className={styles.contentContainer}>
                 <ViewButtons buttons={viewButtonsData}/>
                 <RoundedButtons data={roundedButtonData}/>
