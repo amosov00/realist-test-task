@@ -43,25 +43,27 @@ export function Menu({onExit, data, isMobile, setIsFull, isFull}) {
             }
             <button className={styles.closeButton} onClick={onExit}/>
             <div className={styles.head}>{!isMobile ? data?.name : kitcut(data?.name, 17)}</div>
-            <ViewButtons buttons={viewButtonsData}/>
-            <RoundedButtons data={roundedButtonData}/>
-            <div className={styles.priceWrapper}>
-                <div className={styles.priceStick}/>
-                <div>
-                    <span className={styles.price}>{formatNumber(data.exposition_stats?.rank_index_median_price)}</span>
-                    <span className={styles.currency}> AED</span>
+            <div className={styles.contentContainer}>
+                <ViewButtons buttons={viewButtonsData}/>
+                <RoundedButtons data={roundedButtonData}/>
+                <div className={styles.priceWrapper}>
+                    <div className={styles.priceStick}/>
+                    <div>
+                        <span className={styles.price}>{formatNumber(data.exposition_stats?.rank_index_median_price)}</span>
+                        <span className={styles.currency}> AED</span>
+                    </div>
                 </div>
+                <div className={styles.chartWrapper}>
+                    <Chart/>
+                </div>
+                <DistrictCardContainer data={districtCardData}/>
+                <Information
+                    ads={data.exposition_stats?.ads_count}
+                    price={formatNumber(data.exposition_stats?.rank_index_median_price)}
+                    sqm={formatNumber(data.exposition_stats?.sqm_price_median)}
+                />
+                <BigButton/>
             </div>
-            <div className={styles.chartWrapper}>
-                <Chart/>
-            </div>
-            <DistrictCardContainer data={districtCardData}/>
-            <Information
-                ads={data.exposition_stats?.ads_count}
-                price={formatNumber(data.exposition_stats?.rank_index_median_price)}
-                sqm={formatNumber(data.exposition_stats?.sqm_price_median)}
-            />
-            <BigButton/>
         </div>
     )
 }

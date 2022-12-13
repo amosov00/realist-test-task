@@ -72,6 +72,7 @@ function App() {
 
   return (
     <div className="App">
+        <div className="x"></div>
         {
             !isMobile && (
                 <LeftCard isShow={showBalloon}>
